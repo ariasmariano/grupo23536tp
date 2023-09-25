@@ -1,9 +1,9 @@
-**###TP CODO A CODO**
+###TP CODO A CODO
 
-**##Idea**
+##Idea
 Control de turnos sobre servicios. Por ejemplo peluquería.
 
-**##Contenido de la página:**
+##Contenido de la página:
 #1)Inicio con productos a la venta
   a)  Si el usuario esta logeado que le permita realizar las reservas si no que lo rediriga a 2)
   b)  Cada producto/servicio tendra su foto con una breve descripcion y el precio
