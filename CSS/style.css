@@ -1,0 +1,60 @@
+#logoGym {
+    width: 200px;
+}
+
+#logoCodoCodo {
+    width: 100px;    
+}
+
+.cuerpo {
+    width: 500px;
+    height: 850px;    
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 500px;
+}
+
+#slogan {
+    width: 200%;    
+}
+  
+header,
+footer {
+    background-color: #3333337d;
+    color: #fff;    
+}
+
+main {
+    background-color: #dddddd7d;
+    color: #333;
+}
+
+#cel {
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;    
+    z-index: -1;
+}
+
+.navegador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    font-size: 60px;
+    color: #fff;
+    margin: 50px;    
+}
