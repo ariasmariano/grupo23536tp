@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Quicksand&family=Righteous&family=Skranji:wght@400;700&display=swap');
+
 #logoGym {
     width: 200px;
 }
@@ -23,13 +25,14 @@ body {
   
 header,
 footer {
-    background-color: #3333337d;
+    background-color: #191825;
     color: #fff;    
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 main {
-    background-color: #dddddd7d;
-    color: #333;
+    background-color: #865dff62;
+    color: #191825;
 }
 
 #cel {
