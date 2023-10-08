@@ -1,0 +1,94 @@
+
+header{
+    margin: 0;
+    background-color: #191825;
+}
+.menu img{
+    width: 100px;
+}
+.hipervinculos{
+    background-color: #191825;
+}
+.hipervinculos a img{
+    width: 50px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
+
+main{
+    padding: 0;
+    margin: 0;
+    background-image:url(../img/Fitness_Black.jpg);
+}
+ h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}
+.formulario{
+    padding: 1rem 2rem;
+    font-family:'Quicksand', sans-serif;
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-left: 10%;
+    background-color: #865DFF;
+    width: fit-content;
+}
+.formulario label{
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+.input {
+    width: 80%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 20px;
+    padding: 0 30px 0 10px;
+    transition: .3s ease all;
+}
+.input:focus{
+    border: 3px solid #E384FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.formulario textarea{
+    height: 150px;
+    font-family:'Quicksand', sans-serif;
+    font-size: 100%;
+    margin: 15px 0 ;
+}
+.formulario-buttom{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+.buttom {
+    background-color: #191825;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family:'Quicksand', sans-serif;
+    font-size: 90%;
+    padding: 0 15px;
+}
+.buttom:hover {
+    background:#E384FF;
+    color: black;
+    scale: 1.025; /*agranda el boton*/
+    border: #191825 solid 1px;
+}
