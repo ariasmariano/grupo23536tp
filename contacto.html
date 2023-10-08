@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="./img/logoGym.png" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/contacto.css">
 </head>
 <body>
     <header>        
@@ -16,30 +21,37 @@
             <a href="contacto.html" class="menu">Contacto</a>
             <a href="registro.html" class="menu">Registro</a>            
         </nav>
-        <hr>
     </header>
 
     <main>
-        <h2>Conmunicate con nosotros</h2>
-        <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre" id="nombre" >
-         <br><br>
-        <label for="apellido">Apellido: </label>
-        <input type="text" name="apellido" id="apellido" >
-        <br><br>
-        <label for="tel">Teléfono: </label>
-        <input type="number" name="tel" id="telefono">
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <br><br>
-        <textarea name="Comentario" id="Comentario" cols="40" rows="10" placeholder="Consultas, comentarios y sugerencias..."></textarea>
-        <br><br>
-        <input type="submit" value="Enviar Consulta" onclick="alert('Gracias por tu consulta!!');">
+        <h2>COMUNICATE CON NOSOTROS</h2>
+       
+        <form action="show-data.html" target="_blank" method="get" class="formulario">
+            <div class="formmulario-nombre">
+                <label for="nombre" class="label-nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" class="input">
+            </div>
+            <div class="formmulario-apellido">
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" class="input">
+            </div>
+            <div class="formmulario-tel">
+                <label for="tel">Teléfono: </label>
+                <input type="tel" name="tel" id="telefono" class="input">
+            </div>
+            <div class="formmulario-mail">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="input">
+            </div>
+            <div class="formmulario-textarea">
+                <textarea name="Comentario" id="Comentario"  placeholder="Consultas, comentarios y sugerencias..." class="input"></textarea>
+            </div>
+            <div class="formulario-buttom">
+                <input type="submit" value="Enviar Consulta" onclick="alert('Gracias por tu consulta!!');" class="buttom">
+        </form>
     </main>
 
     <footer>
-        <hr>
         <nav class="hipervinculos">
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="./img/facebook.png" alt="facebook">
