@@ -16,33 +16,36 @@ header{
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
-
-main{
+*{
     padding: 0;
     margin: 0;
+}
+main{
     background-image:url(../img/Fitness_Black.jpg);
 }
  h2{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 150%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     color: white;
 }
 .formulario{
     padding: 1rem 2rem;
     font-family:'Quicksand', sans-serif;
-    font-size: 90%;
     display: flex;
     flex-direction: column;
     justify-items: center;
     margin-left: 10%;
     background-color: #865DFF;
     width: fit-content;
+    border-radius: 5px;
+    border: 1px solid #E384FF;
 }
 .formulario label{
     display: block;
-    font-weight: 600;
+    font-size: 100%;
+    font-weight: bold;
     cursor: pointer;
     padding: 10px;
     text-align: center;
@@ -60,7 +63,7 @@ main{
 .input:focus{
     border: 3px solid #E384FF;
     outline: none;
-    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 0px 30px rgb(58, 55, 55);
 }
 .formulario textarea{
     height: 150px;
@@ -80,7 +83,7 @@ main{
     line-height: 40px;
     font-weight: bold;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     font-family:'Quicksand', sans-serif;
     font-size: 90%;
@@ -91,4 +94,28 @@ main{
     color: black;
     scale: 1.025; /*agranda el boton*/
     border: #191825 solid 1px;
+    box-shadow: 3px 0px 30px rgb(60, 59, 59);
+}
+
+
+/* ------------------mediaqueries----------------- */
+@media screen and (max-width:700px){ /*que tenga como max 700*/
+    main{
+        background-image: url(../img/fondo-contacto.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .contenedor-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario{
+        margin-left: 0;
+    }
+    h2{
+        max-width: 80%;
+    }
+
 }
