@@ -1,75 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="./img/logoGym.png" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/registro.css">
+
 </head>
+
 <body>
-    <header>        
+    <header>
         <nav class="navegador">
             <a href="quienessomos.html" class="menu">Quienes somos</a>
             <a href="clases.html" class="menu">Sumate</a>
             <a href="index.html" class="menu"><img src="./img/logoGym.png" alt="Logo del gim" id="logoGym"></a>
             <a href="contacto.html" class="menu">Contacto</a>
-            <a href="registro.html" class="menu">Registro</a>            
+            <a href="registro.html" class="menu">Registro</a>
         </nav>
-        <hr>
     </header>
 
     <main>
-    <h2>Formulario de registro</h2>
-    <form action="show-data.html" method="get" >
-        <fieldset>
-            <legend>Datos personales</legend>
-            <br>
-            <label for="Nombre">Nombre: </label>
-            <input type="text" name="Nombre" id="Nombre" autofocus>
-            <label for="Apellido">Apellido: </label>
-            <input type="text" name="Apellido" id="Apellido" >
-            <br><br>
-            <label for="Edad" max="99" min="10">Edad: </label>
-            <input type="number" name="Edad" id="Edad">
-            <label for="dni">DNI: </label>
-            <input type="number" name="dni" id="DNI">
-            <br><br>
-            <label for="Fecha-Nacimiento:">Fecha de Nacimiento: </label>
-           <input type="date" name="Fecha-Nacimiento" id="Fecha-Nacimiento">
-           <br><br>
-           <label for="direccion">Dirección: </label>
-           <input type="text" name="direccion" id="direccion">
-           <label for="Ciudad">Ciudad: </label>
-           <input type="text" name="Ciudad" id="Ciudad">
-           <br><br>
-           <label for="cod postal">Código Postal: </label>
-           <input type="number" name="cod-postal" id="cod postal">
-           <label for="pais">País: </label>
-           <input type="text" name="pais" id="pais" value="Argentina">
-           <br><br>
-           <label for="telefono">Teléfono: </label>
-           <input type="number" name="Telefono" id="Teléfono">
-           <p>Género:
-            <label><input type="radio" name="genero" value="femenino" >Femenino</label>
-            <label><input type="radio" name="genero" value="masculino">Masculino</label>
-            <label><input type="radio" name="genero" value="otro">Otro</label>
-           </p>
-        </fieldset>
         <br><br>
-        <label for="mail">Email: </label>
-        <input type="email" name="email" id="email">
-        <label for="password">Contraseña: </label>
-        <input type="password" name="password" id="password">
-        <br><br>
-        <input type="submit" value="Enviar" onclick="alert('Datos enviados correctamente');">
-        <button type="submit">Borrar</button>
+        <div class="contenedor-form">
+            <form class="formulario" id="formulario" action="show-data.html" method="get" target="_blank">
+                
+                <h2>Formulario de registro</h2>
 
-    </form>
+                <!--Grupo nombre-->
+                <div class="formulario_grupo" id="grupo_nombre">
+                    <label for="Nombre" class="formulario_label">Nombre: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" name="Nombre" id="Nombre" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo apellido-->
+                <div class="formulario_grupo" id="grupo_apellido">
+                    <label for="apellido" class="formulario_label">Apellido: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" name="apellido" id="apellido" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo edad-->
+                <div class="formulario_grupo" id="grupo_edad">
+                    <label for="edad" max="99" min="10" class="formulario_label">Edad: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="number" name="edad" id="edad" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo dni-->
+                <div class="formulario_grupo" id="grupo_dni">
+                    <label for="dni" class="formulario_label">DNI: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="number" name="dni" id="dni" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo fecha de Nacimiento-->
+                <div class="formulario_grupo" id="grupo_fechaNacimiento">
+                    <label for="fechaNacimiento" class="formulario_label">Fecha de Nacimiento: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="date" name="fechaNacimiento" id="fechaNacimiento" autofocus
+                            class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo direccion-->
+                <div class="formulario_grupo" id="grupo_direccion">
+                    <label for="direccion" class="formulario_label">Dirección: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" name="direccion" id="direccion" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo Ciudad-->
+                <div class="formulario_grupo" id="grupo_Ciudad">
+                    <label for="Ciudad" class="formulario_label">Ciudad: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" name="Ciudad" id="Ciudad" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo cod postal-->
+                <div class="formulario_grupo" id="grupo_cod postal">
+                    <label for="cod postal" class="formulario_label">Código Postal: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="number" name="cod postal" id="cod postal" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo pais-->
+                <div class="formulario_grupo" id="grupo_pais">
+                    <label for="pais" class="formulario_label">País: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" name="pais" id="pais" autofocus value="Argentina" class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo telefono-->
+                <div class="formulario_grupo" id="grupo_telefono">
+                    <label for="telefono" class="formulario_label">Teléfono: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="number" name="telefono" id="telefono" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo genero-->
+                <div class="formulario_grupo" id="grupo_genero">
+                    <p><b>Género: </b>
+                        <label class="formulario_label-genero"><input type="radio" name="genero" value="femenino"
+                                class="formulario_input-genero">Femenino</label>
+                        <label class="formulario_label-genero"><input type="radio" name="genero" value="masculino"
+                                class="formulario_input-genero">Masculino</label>
+                        <label class="formulario_label-genero"><input type="radio" name="genero" value="otro"
+                                class="formulario_input-genero">Otro</label>
+                    </p>
+                </div>
+
+
+                <!--Grupo usuario-->
+                <div class="formulario_grupo" id="grupo_usuario">
+                    <label for="usuario" class="formulario_label">Usuario: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" name="usuario" id="usuario" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo mail-->
+                <div class="formulario_grupo" id="grupo_mail">
+                    <label for="mail" class="formulario_label">Correo Electrónico: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="email" name="mail" id="mail" placeholder="correo@correo.com" autofocus
+                            class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo password-->
+                <div class="formulario_grupo" id="grupo_password">
+                    <label for="password" class="formulario_label">Contraseña: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="password" name="password" id="password" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo password2-->
+                <div class="formulario_grupo" id="grupo_password2">
+                    <label for="password2" class="formulario_label">Repetir Contraseña: </label>
+                    <div class="formulario_grupo-input">
+                        <input type="password" name="password2" id="password2" autofocus class="formulario_input">
+                    </div>
+                </div>
+
+                <!--Grupo terminos y condiciones-->
+                <div class="formulario_grupo-terminos" id="grupo_terminos">
+                    <label class="formulario_label">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos"
+                            class="formulario_input">Acepto los Términos
+                        y Condiciones
+                    </label>
+                </div>
+
+                <!--boton enviar-->
+                <div class="formulario_grupo-btn-enviar">
+                    <input type="submit" value="Enviar" onclick="alert('Formulario enviado exitosamente!');"
+                        class="formulario_input-btn">
+                </div>
+            </form>
+        </div>
+        <br><br>
     </main>
 
     <footer>
-        <hr>
         <nav class="hipervinculos">
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="./img/facebook.png" alt="facebook">
@@ -81,9 +190,12 @@
                 <img src="./img/instagram.png" alt="instagram">
             </a>
             <p>Sitio desarrollado por alumnos de</p>
-            <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank"><img src="./img/codoacodo.png" alt="logo codo a codo" id="logoCodoCodo"></a>
+            <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank"><img src="./img/codoacodo.png"
+                    alt="logo codo a codo" id="logoCodoCodo"></a>
         </nav>
-        </footer>
+    </footer>
 
+    <script src="JS/formulario.js"></script>
 </body>
+
 </html>
