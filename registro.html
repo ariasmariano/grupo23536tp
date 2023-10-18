@@ -10,20 +10,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./CSS/registro.css">
 
 </head>
 
 <body>
     <header>
-        <nav class="navegador">
-            <a href="quienessomos.html" class="menu">Quienes somos</a>
-            <a href="clases.html" class="menu">Sumate</a>
-            <a href="index.html" class="menu"><img src="./img/logoGym.png" alt="Logo del gim" id="logoGym"></a>
-            <a href="contacto.html" class="menu">Contacto</a>
-            <a href="registro.html" class="menu">Registro</a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="./img/logoGymInicio.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a href="acercade.html" class="menu">QUIENES SOMOS</a></li>
+                <li><a href="servicios.html" class="menu">SUMATE</a></li>
+                <li><a href="contacto.html" class="menu">CONTACTO</a></li>
+                <li><a href="registro.html" class="menu">REGISTRO</a></li>
+            </ul>
         </nav>
-    </header>
+        </header>  
 
     <main>
         <br><br>
@@ -178,21 +189,34 @@
         <br><br>
     </main>
 
-    <footer>
-        <nav class="hipervinculos">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="./img/facebook.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/home" target="_blank">
-                <img src="./img/twitterx.png" alt="twitterx">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="./img/instagram.png" alt="instagram">
-            </a>
-            <p>Sitio desarrollado por alumnos de</p>
-            <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank"><img src="./img/codoacodo.png"
-                    alt="logo codo a codo" id="logoCodoCodo"></a>
-        </nav>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank">
+                        <img src="./img/codoacodo.png" alt="Logo de Codo a Codo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>DEVS</h2>
+                <p> Somos estudiantes del curso Full Stack Python del programa Codo a Codo.
+                    Un Programa de enseñanza en Programación, destinado a personas jóvenes y
+                    adultas, que cuenten con título secundario.</p>
+            </div>
+            <div class="box">
+                <h2>SEGUINOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/codoacodooficial/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/programacodoacodo/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/EducacionBA/status/1404807225420435463?lang=es" class="fa-brands fa-x-twitter" target="_blank"></a>                    
+                    <a href="https://www.youtube.com/channel/UCzelX_Pd_RkibwOMrYudIrQ" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>Sitio desarrollado por alumnos del programa CODO a CODO - Segundo semestre del 2023</small>
+        </div>
     </footer>
 
     <script src="JS/formulario.js"></script>

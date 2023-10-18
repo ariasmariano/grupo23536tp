@@ -1,18 +1,4 @@
 
-header{
-    margin: 0;
-    background-color: #191825;
-}
-.menu img{
-    width: 100px;
-}
-.hipervinculos{
-    background-color: #191825;
-}
-.hipervinculos a img{
-    width: 50px;
-}
-
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
@@ -20,7 +6,61 @@ header{
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
+/*Barra de navegacion*/
+
+nav{
+    box-sizing: border-box;
+    font-family:"Josefin Sans", sans-serif;
+    background: #191825;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    position: relative;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #FFA3FD;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    color: #865DFF;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*cuerpo del regidtro*/
 main{
     background-image: url(../img/pesas\ fitness-registro.jpg);
     background-position: center;
@@ -114,12 +154,80 @@ main{
     padding: 0px 30px;
 }
 .formulario_input-btn:hover{
+    background:#E384FF;
+    color: black;
+    scale: 1.025; /*agranda el boton*/
+    border: #191825 solid 1px;
     box-shadow: 3px 0px 30px rgb(102, 102, 102);
 }
 
+/*Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    height: 100%;
+    background-color: #191825;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:90px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #E384FF;
+    margin-bottom: 25px;
+    font-size: 20px;    
+}
+.pie-pagina .grupo-1 .box p{
+    color: #FFA3FD;
+    margin-bottom: 10px;
+    font-family:"Quicksand", sans-serif;
+    text-align: justify;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #865DFF;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;    
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family:"Quicksand", sans-serif;
+} 
 
-/* ------------------mediaqueries----------------- */
-@media screen and (max-width:700px){ /*que tenga como max 700*/
+
+
+/* ----------mediaqueries de body------------ */
+
+@media screen and (max-width:600px){ /*que tenga como max 700*/
     .formulario{
         grid-template-columns: 1fr;
     }
@@ -140,5 +248,60 @@ main{
     }
     .formulario_label-genero{
         padding: 3px;
+    }
+}
+
+/*-----mediaqueries de header y footer--------*/
+
+@media screen and (min-width: 600px) and (max-width: 1024px){ /*TABLETS*/
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:50px;
+        padding: 25px 0px;
+    }
+}
+
+@media screen and (max-width: 600px){ /*CELULARES*/
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        min-height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #865DFF;
+    }
+    #check:checked ~ ul{     
+        
+        left: 0;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 0px;
     }
 }

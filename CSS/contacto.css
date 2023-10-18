@@ -1,31 +1,71 @@
 
-header{
-    margin: 0;
-    background-color: #191825;
-}
-.menu img{
-    width: 100px;
-}
-.hipervinculos{
-    background-color: #191825;
-}
-.hipervinculos a img{
-    width: 50px;
-}
-
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
+
+/*Barra de navegacion*/
+
+nav{
+    box-sizing: border-box;
+    font-family:"Josefin Sans", sans-serif;
+    background: #191825;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    position: relative;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #FFA3FD;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    color: #865DFF;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*body del login*/
 main{
     background-image:url(../img/Fitness_Black.jpg);
 }
  h2{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 150%;
+    font-size: 200%;
     text-align: center;
     padding: 1.5rem 0;
     color: white;
@@ -97,9 +137,71 @@ main{
     box-shadow: 3px 0px 30px rgb(60, 59, 59);
 }
 
+/*Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    height: 100%;
+    background-color: #191825;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:90px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #E384FF;
+    margin-bottom: 25px;
+    font-size: 20px;    
+}
+.pie-pagina .grupo-1 .box p{
+    color: #FFA3FD;
+    margin-bottom: 10px;
+    font-family:"Quicksand", sans-serif;
+    text-align: justify;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #865DFF;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;    
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family:"Quicksand", sans-serif;
+} 
 
-/* ------------------mediaqueries----------------- */
-@media screen and (max-width:700px){ /*que tenga como max 700*/
+/* ---------------mediaqueries--------------- */
+
+@media screen and (max-width:600px){ /*que tenga como max 700*/
     main{
         background-image: url(../img/fondo-contacto.jpg);
         background-size: cover;
@@ -117,5 +219,59 @@ main{
     h2{
         max-width: 80%;
     }
+}
 
+/*-----mediaqueries de header y footer--------*/
+
+@media screen and (min-width: 600px) and (max-width: 1024px){ /*TABLETS*/
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:50px;
+        padding: 25px 0px;
+    }
+}
+
+@media screen and (max-width: 600px){ /*CELULARES*/
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        min-height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #865DFF;
+    }
+    #check:checked ~ ul{     
+        
+        left: 0;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 0px;
+    }
 }
