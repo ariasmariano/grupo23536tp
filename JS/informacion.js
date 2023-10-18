@@ -26,9 +26,9 @@ let abonos = [
 let abono = ``
 for(let i=0; i<abonos.length; i ++){
     abono = abono + `
-    <div class="card" style="padding:20px; width:30%; border: dashed black 2px">
+    <div class="card">
             <h3>${abonos[i].nombre}</h3>
-            <h3>${abonos[i].precio}</h3>
+            <h4>${abonos[i].precio}</h4>
             <p>${abonos[i].descripcion}</p>
             <button><a href="">Asociarme</a></button>
 
@@ -83,7 +83,7 @@ let clase = ``
 
 for(let actividad of clases){
     clase = clase + `
-    <div class="card" style="padding:20px; border: solid red 1px" >
+    <div class="card" >
             <h3>${actividad.nombre}</h3>
             <h4 style="text-align:center">${actividad.horarios}</h4>
             <button><a href="">Reservar</a></button>
