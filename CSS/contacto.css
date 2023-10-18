@@ -199,6 +199,10 @@ main{
     font-family:"Quicksand", sans-serif;
 } 
 
+.pie-pagina h2 {
+    font-family:"Josefin Sans", sans-serif;
+}
+
 /* ---------------mediaqueries--------------- */
 
 @media screen and (max-width:600px){ /*que tenga como max 700*/

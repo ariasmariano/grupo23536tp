@@ -162,7 +162,11 @@ li a.active, li a:hover{
 .pie-pagina .grupo-2 small{
     font-size: 15px;
     font-family:"Quicksand", sans-serif;
-} 
+}
+
+.pie-pagina h2 {
+    font-family:"Josefin Sans", sans-serif;
+}
 
 
 /*-----mediaqueries de header y footer--------*/

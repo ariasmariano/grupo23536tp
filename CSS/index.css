@@ -145,6 +145,10 @@ section {
     font-family:"Quicksand", sans-serif;
 } 
 
+.pie-pagina h2 {
+    font-family:"Josefin Sans", sans-serif;
+}
+
 
 @media screen and (min-width: 600px) and (max-width: 1024px){ /*TABLETS*/
     .enlace{
