@@ -33,7 +33,7 @@ for (let i = 0; i < abonos.length; i++) {
             <h3>${abonos[i].nombre}</h3>
             <h4>${abonos[i].precio}</h4>
             <p>${abonos[i].descripcion}</p>
-            <a href="">Asociarme</a>
+            <a class="linkear" href="">Asociarme</a>
 
     </div>
     `;
@@ -46,37 +46,37 @@ let clases = [
     id: 1,
     nombre: "Pileta",
     horarios: "9h, 11h, 13h, 15h, 18h",
-    imagen: "",
+    imagen: "https://img2.storyblok.com/f/76838/1920x1080/0be9b99354/uses-swimming-hero-dsk.jpg",
   },
   {
     id: 2,
     nombre: "Yoga",
     horarios: "08h, 10h",
-    imagen: "",
+    imagen: "https://besportbefree.fr/wp-content/uploads/2022/10/pourquoi-associer-yoga-pilates-1024x684.jpg",
   },
   {
     id: 3,
     nombre: "Spinning",
     horarios: "10h, 16h, 20h",
-    imagen: "",
+    imagen: "https://www.sport.es/labolsadelcorredor/wp-content/uploads/2018/10/spinning-portada.jpg",
   },
   {
     id: 4,
     nombre: "Funcional",
     horarios: "9h, 19h",
-    imagen: "",
+    imagen: "https://www.ericfavre.com/lifestyle/wp-content/uploads/2020/06/crossfit-1024x683.jpg",
   },
   {
     id: 5,
     nombre: "Salsa",
     horarios: "19h",
-    imagen: "",
+    imagen: "https://media.ucpa.com/t_UCPA_Horizontal/UCPA-SPORT-ACCESS/00091573-adultes-fitness.jpg",
   },
   {
     id: 6,
     nombre: "Karate",
     horarios: "21h",
-    imagen: "",
+    imagen: "https://i.ytimg.com/vi/TLXKdRwTNNs/maxresdefault.jpg",
   },
 ];
 
@@ -87,7 +87,7 @@ for (let actividad of clases) {
     clase +
     `
     <div class="card" >
-            <div class="card-image actividad${actividad.id}"></div>
+            <div class="card-image actividad${actividad.id}" style="background-image:url('${actividad.imagen}') "></div>
             <h3>${actividad.nombre}</h3>
             <p style="text-align:center">${actividad.horarios}</p>
             <button><a href="">Reservar</a></button>
