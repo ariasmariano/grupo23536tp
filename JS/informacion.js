@@ -33,7 +33,7 @@ for (let i = 0; i < abonos.length; i++) {
             <h3>${abonos[i].nombre}</h3>
             <h4>${abonos[i].precio}</h4>
             <p>${abonos[i].descripcion}</p>
-            <a class="linkear" href="">Asociarme</a>
+            <a class="linkear" href="./registro.html">Asociarme</a>
 
     </div>
     `;
@@ -90,7 +90,7 @@ for (let actividad of clases) {
             <div class="card-image actividad${actividad.id}" style="background-image:url('${actividad.imagen}') "></div>
             <h3>${actividad.nombre}</h3>
             <p style="text-align:center">${actividad.horarios}</p>
-            <button><a href="">Reservar</a></button>
+            <button><a href="./registro.html">Reservar</a></button>
             
 
     </div>`;
