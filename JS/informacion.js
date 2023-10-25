@@ -2,21 +2,21 @@ let abonos = [
   {
     id: 1,
     nombre: "Abono base",
-    precio: 7500,
+    precio: 8000,
     imagen: "",
-    descripcion: "Con el abono basico tenes acceso al gimnasio",
+    descripcion: "Con el abono basico tenes acceso al gimnasio, maquinas distribuidoras de agua",
   },
   {
     id: 2,
     nombre: "Abono plus",
-    precio: 7500,
+    precio: 13000,
     imagen: "",
-    descripcion: "Con el abono plus tenes acceso al gimnasio y pileta",
+    descripcion: "Con el abono plus tenes acceso al gimnasio y pileta, maquinas distribuidoras de agua",
   },
   {
     id: 3,
     nombre: "Abono Premium",
-    precio: 7500,
+    precio: 20000,
     imagen: "",
     descripcion:
       "Con el abono premium tenes acceso al gimnasio, pileta y todas las clases ilimitadas",
@@ -29,9 +29,9 @@ for (let i = 0; i < abonos.length; i++) {
     abono +
     `
     <div class="card">
-    <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/2705.png" alt="">
+    <img src="../img/light.avif"" alt="">
             <h3>${abonos[i].nombre}</h3>
-            <h4>${abonos[i].precio}</h4>
+            <h3>${abonos[i].precio}$</h3>
             <p>${abonos[i].descripcion}</p>
             <a class="linkear" href="./registro.html">Asociarme</a>
 
@@ -40,6 +40,23 @@ for (let i = 0; i < abonos.length; i++) {
 }
 
 document.querySelector(".container-abonos").innerHTML = abono;
+
+// document.querySelector(".contenido").innerHTML= contenido;
+// function traer() {
+//   fetch('https://randomuser.me/api')
+//    .then(res => res.json())
+//    .then(res => {
+//    console.log(res)
+//    console.log(res.results[0].email)
+//    contenido.innerHTML= `
+//    <img src="${res.results[0].picture.large}
+//    " width="100px"
+//    class="img-fluid rounded-circle">
+//    <p>Nombre: ${res.results[0].name.first}</p>
+//    <p>Mail: ${res.results[0].email}</p>`
+//    })
+//   }
+
 
 let clases = [
   {
@@ -90,6 +107,7 @@ for (let actividad of clases) {
             <div class="card-image actividad${actividad.id}" style="background-image:url('${actividad.imagen}') "></div>
             <h3>${actividad.nombre}</h3>
             <p style="text-align:center">${actividad.horarios}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at laoreet libero, a convallis est. Phasellus semper orci non semper pretium. Donec a mattis magna. Fusce turpis mi, euismod et urna vitae, eleifend placerat lorem.  vfelis. Cras mi nibh, cursu.</p>
             <button><a href="./registro.html">Reservar</a></button>
             
 
