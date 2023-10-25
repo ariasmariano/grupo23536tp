@@ -231,7 +231,7 @@ main{
 
 /* ----------mediaqueries de body------------ */
 
-@media screen and (max-width:600px){ /*que tenga como max 700*/
+@media screen and (max-width:600px){ 
     .formulario{
         grid-template-columns: 1fr;
     }
@@ -245,6 +245,9 @@ main{
     .formulario_input-btn{
         width:60%;
     }
+    #grupo_genero{
+        padding: 15px 0px 5px 0px;
+    }
     #grupo_genero b{
        display: flex;
        flex-direction: column;
@@ -255,10 +258,10 @@ main{
         padding: 3px;
     }
     .formulario input{
-        margin-left: 25px;
+        margin-left: 30px;
     }
     #grupo_genero input{
-        margin-left:5px;
+        margin-left:20px;
      }
     #grupo_terminos input{
         margin-left:0;
