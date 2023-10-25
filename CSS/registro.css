@@ -249,10 +249,24 @@ main{
        display: flex;
        flex-direction: column;
        margin-bottom: 10px;
+       text-align: center;
     }
     .formulario_label-genero{
         padding: 3px;
     }
+    .formulario input{
+        margin-left: 25px;
+    }
+    #grupo_genero input{
+        margin-left:5px;
+     }
+    #grupo_terminos input{
+        margin-left:0;
+    }
+    .formulario label{
+        text-align: center;
+    }
+
 }
 
 /*-----mediaqueries de header y footer--------*/
@@ -285,11 +299,13 @@ main{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index:1
     }
     nav ul li{
         display: block;
         margin: 50px 0;
-        line-height: 30px;        
+        line-height: 30px;   
+    
     }
     nav ul li a{
         font-size: 20px;
