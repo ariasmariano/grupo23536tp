@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
+    list-style: none;    
 }
 /*Barra de navegacion*/
 
@@ -23,6 +23,7 @@ nav{
     position: fixed;
     position: relative;
 }
+
 .enlace{
     position: absolute;
     padding: 15px 50px;
@@ -71,6 +72,7 @@ li a.active, li a:hover{
     background-color: #285e94;
     text-align: center;
     display: flex;
+    font-family: "Quicksand", sans-serif;
 }
 .widget {
     width: 30%;
@@ -124,7 +126,7 @@ style="background-image:url('../img/codoacodo.png') */
     background-image: url("../img/backgroundMain.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    font-family: "Quicksand", sans-serif;
 }
 h2{
     text-align: center;
