@@ -194,8 +194,11 @@ section {
         color: #865DFF;
     }
     #check:checked ~ ul{     
-        
+    
         left: 0;
+    }
+    #slogan {
+        width: 25rem;
     }
     .pie-pagina .grupo-1{
         width: 90%;
