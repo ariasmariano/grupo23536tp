@@ -1,0 +1,39 @@
+main {
+    background-color: #191825;
+    background-image: url("../../img/backgroundMain.jpeg");
+
+}
+
+.container {
+    padding: 3%;
+}
+
+.formu {
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+    gap: 10px;
+    font-family:"Quicksand", sans-serif;
+    font-size: 100%;
+    color: #865DFF;
+    border: 5px solid rgba(225, 18, 183, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);/*es para darle efecto borroso al fondo*/
+}
+
+.formu h1,h2 {
+    color: #FFA3FD;
+    font-weight: 900;
+}
+label {
+    width: 100%;
+}
+
+.btn-success {
+    background-color: #865DFF;
+    border-color: #FFA3FD;
+}
+.button:hover .btn-success{ 
+    background-color: red;
+    cursor: pointer;
+
+}
