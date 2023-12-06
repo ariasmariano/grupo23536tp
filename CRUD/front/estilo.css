@@ -20,12 +20,31 @@ main {
     backdrop-filter: blur(15px);/*es para darle efecto borroso al fondo*/
 }
 
-.formu h1,h2 {
+.formu h1,h2,th {
     color: #FFA3FD;
     font-weight: 900;
 }
+
+table {
+    border: 3px solid #FFA3FD !important;
+    
+}
+
+td img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
 label {
     width: 100%;
+}
+
+td .btn {
+    width: 100%;
+    margin: 1%;
 }
 
 .btn-success {
