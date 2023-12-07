@@ -58,60 +58,60 @@ document.querySelector(".container-abonos").innerHTML = abono;
 //   }
 
 
-let clases = [
-  {
-    id: 1,
-    nombre: "Pileta",
-    horarios: "9h, 11h, 13h, 15h, 18h",
-    imagen: "https://img2.storyblok.com/f/76838/1920x1080/0be9b99354/uses-swimming-hero-dsk.jpg",
-  },
-  {
-    id: 2,
-    nombre: "Yoga",
-    horarios: "08h, 10h",
-    imagen: "https://besportbefree.fr/wp-content/uploads/2022/10/pourquoi-associer-yoga-pilates-1024x684.jpg",
-  },
-  {
-    id: 3,
-    nombre: "Spinning",
-    horarios: "10h, 16h, 20h",
-    imagen: "https://www.sport.es/labolsadelcorredor/wp-content/uploads/2018/10/spinning-portada.jpg",
-  },
-  {
-    id: 4,
-    nombre: "Funcional",
-    horarios: "9h, 19h",
-    imagen: "https://www.ericfavre.com/lifestyle/wp-content/uploads/2020/06/crossfit-1024x683.jpg",
-  },
-  {
-    id: 5,
-    nombre: "Salsa",
-    horarios: "19h",
-    imagen: "https://media.ucpa.com/t_UCPA_Horizontal/UCPA-SPORT-ACCESS/00091573-adultes-fitness.jpg",
-  },
-  {
-    id: 6,
-    nombre: "Karate",
-    horarios: "21h",
-    imagen: "https://i.ytimg.com/vi/TLXKdRwTNNs/maxresdefault.jpg",
-  },
-];
+// let clases = [
+//   {
+//     id: 1,
+//     nombre: "Pileta",
+//     horarios: "9h, 11h, 13h, 15h, 18h",
+//     imagen: "https://img2.storyblok.com/f/76838/1920x1080/0be9b99354/uses-swimming-hero-dsk.jpg",
+//   },
+//   {
+//     id: 2,
+//     nombre: "Yoga",
+//     horarios: "08h, 10h",
+//     imagen: "https://besportbefree.fr/wp-content/uploads/2022/10/pourquoi-associer-yoga-pilates-1024x684.jpg",
+//   },
+//   {
+//     id: 3,
+//     nombre: "Spinning",
+//     horarios: "10h, 16h, 20h",
+//     imagen: "https://www.sport.es/labolsadelcorredor/wp-content/uploads/2018/10/spinning-portada.jpg",
+//   },
+//   {
+//     id: 4,
+//     nombre: "Funcional",
+//     horarios: "9h, 19h",
+//     imagen: "https://www.ericfavre.com/lifestyle/wp-content/uploads/2020/06/crossfit-1024x683.jpg",
+//   },
+//   {
+//     id: 5,
+//     nombre: "Salsa",
+//     horarios: "19h",
+//     imagen: "https://media.ucpa.com/t_UCPA_Horizontal/UCPA-SPORT-ACCESS/00091573-adultes-fitness.jpg",
+//   },
+//   {
+//     id: 6,
+//     nombre: "Karate",
+//     horarios: "21h",
+//     imagen: "https://i.ytimg.com/vi/TLXKdRwTNNs/maxresdefault.jpg",
+//   },
+// ];
 
-let clase = ``;
+// let clase = ``;
 
-for (let actividad of clases) {
-  clase =
-    clase +
-    `
-    <div class="card" >
-            <div class="card-image actividad${actividad.id}" style="background-image:url('${actividad.imagen}') "></div>
-            <h3>${actividad.nombre}</h3>
-            <p style="text-align:center">${actividad.horarios}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at laoreet libero, a convallis est. Phasellus semper orci non semper pretium. Donec a mattis magna. Fusce turpis mi, euismod et urna vitae, eleifend placerat lorem.  vfelis. Cras mi nibh, cursu.</p>
-            <button><a href="./registro.html">Reservar</a></button>
+// for (let actividad of clases) {
+//   clase =
+//     clase +
+//     `
+//     <div class="card" >
+//             <div class="card-image actividad${actividad.id}" style="background-image:url('${actividad.imagen}') "></div>
+//             <h3>${actividad.nombre}</h3>
+//             <p style="text-align:center">${actividad.horarios}</p>
+//             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at laoreet libero, a convallis est. Phasellus semper orci non semper pretium. Donec a mattis magna. Fusce turpis mi, euismod et urna vitae, eleifend placerat lorem.  vfelis. Cras mi nibh, cursu.</p>
+//             <button><a href="./registro.html">Reservar</a></button>
             
 
-    </div>`;
-}
+//     </div>`;
+// }
 
-document.querySelector(".container-clases").innerHTML = clase;
+// document.querySelector(".container-clases").innerHTML = clase;

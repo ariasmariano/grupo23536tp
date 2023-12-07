@@ -22,7 +22,7 @@ if (navigator.geolocation) {
     const api = "70976a1f7178e791b468aa213a29593f";
 
 
-    const url_base = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=${api}`
+    const url_base = `http://api.openweathermap.org/data/2.5/forecast?id=3435910&appid=${api}`
     // const url_base = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` + `lon-${lon}&appid=${api}`;
 
         fetch(url_base)

@@ -70,8 +70,6 @@ li a.active, li a:hover{
 
 .clima {
     background-color: #285e94;
-    text-align: center;
-    display: flex;
     font-family: "Quicksand", sans-serif;
 }
 .widget {
@@ -146,14 +144,14 @@ h2{
     border-radius: 5px;
 }
 /* SEGUNDO BOTON */
-button{
+/* button{
     background-color: black;
     color: white;
     padding: 15px 20px;
     text-align: center;
     margin: 20px 10px;
     border-radius: 5px;
-}
+} */
 
 .card:hover button{
     background-color: white;
